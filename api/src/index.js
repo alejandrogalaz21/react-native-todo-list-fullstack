@@ -1,7 +1,7 @@
 import http from 'http'
 import app from './app'
 
-const PORT = 5000
+const PORT = app.get('port')
 
 http.Server(app).listen(PORT, async () => {
   try {
